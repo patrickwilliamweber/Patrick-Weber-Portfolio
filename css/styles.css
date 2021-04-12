@@ -1,0 +1,368 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+     :root {
+        --primary-color: #ff2400;
+        --secondary-color: lightcoral;
+        --main-font: "Akaya Telivigala";
+        --text-size: 1.5em;
+        --big-text: 4.2em;
+    }
+    
+    .page-wrap::before {
+        background-color: lightgoldenrodyellow;
+        opacity: .3;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        z-index: -2;
+    }
+    
+    .bokeh-background::before {
+        content: "";
+        background-image: url("https://motionarray.imgix.net/preview-101334-W3sWvekUw8-high_0013.jpg");
+        background-size: cover;
+        background-repeat: repeat-y;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.1;
+        z-index: -1;
+    }
+    
+    .header {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        flex-direction: row;
+    }
+    
+    .header__marigold {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        box-shadow: 0 0 8px var(--primary-color);
+    }
+    
+    .nav__list {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin-top: 40px;
+    }
+    
+    .nav__list-item {
+        height: 50px;
+        margin-left: 5vw;
+        display: inline-block;
+        padding: 12px;
+        text-align: center;
+        font-family: var(--main-font);
+        font-size: 1.6em;
+    }
+    
+    .nav__list-item:hover {
+        text-shadow: 0 0 8px var(--primary-color);
+    }
+    
+    .profile {
+        display: flex;
+        flex-direction: row;
+        margin: 5em auto 0 auto;
+    }
+    
+    .profile__headshot {
+        height: 280px;
+        width: 280px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: auto;
+        margin-top: 30px;
+        box-shadow: 0 0 15px var(--primary-color);
+    }
+    
+    .profile__hello-text {
+        margin: 2em auto 0 3em;
+    }
+    
+    .profile__hello {
+        font-family: var(--main-font);
+        font-size: var(--big-text);
+        text-shadow: 3px 3px var(--secondary-color);
+    }
+    
+    .profile__text {
+        font-family: var(--main-font);
+        font-size: var(--text-size);
+        text-shadow: 1px 1px var(--secondary-color);
+    }
+    
+    .profile__resume-button {
+        font-family: var(--main-font);
+        font-size: 1em;
+        text-shadow: 1px 1px var(--secondary-color);
+        text-decoration: none;
+        width: 300px;
+    }
+    
+    .footer {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .footer__logos {
+        text-align: center;
+        width: 30%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer__logo {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        opacity: .5;
+        transition: opacity 700ms;
+        margin: 0 6px;
+    }
+    
+    .footer__logo:hover {
+        opacity: 1;
+        box-shadow: 0 0 10px var(--primary-color);
+    }
+    
+    .footer__logo-facebook {
+        height: 95px;
+        width: 95px;
+    }
+    
+    .footer__logo-youtube {
+        width: 100px;
+        transform: rotate(270deg);
+    }
+    
+    .footer__text {
+        text-align: center;
+        font-family: var(--main-font);
+    }
+    
+    .footer__email:hover {
+        text-shadow: 0 0 8px var(--primary-color);
+    }
+    /* Work Page */
+    
+    .work__heading {
+        font-family: var(--main-font);
+        font-size: var(--big-text);
+        text-shadow: 3px 3px var(--secondary-color);
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        bottom: 20px;
+    }
+    
+    .work__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    .work__grid-child {
+        height: 200px;
+        width: 250px;
+        background-image: linear-gradient(to bottom, rgb(40, 60, 80), rgb(194, 210, 224));
+        border: 3px solid black;
+        border-radius: 10%;
+        margin: 10% 10%;
+        transition: background-image 2s;
+        transition: background-color 2s;
+    }
+    
+    .work__grid-child:hover {
+        background-color: rgb(60, 119, 170);
+        background-image: none;
+    }
+    
+    .work__footer {
+        margin-top: -13px;
+    }
+    /*  About Page */
+    
+    .about__header {
+        font-family: var(--main-font);
+        font-size: var(--big-text);
+        text-shadow: 3px 3px var(--secondary-color);
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        bottom: 20px;
+    }
+    
+    .about__text {
+        font-family: var(--main-font);
+        font-size: var(--text-size);
+        text-shadow: 1px 1px var(--secondary-color);
+        max-width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 30px;
+    }
+    /* SVG */
+    
+    .house__svg {
+        width: 250px;
+        height: 250px;
+        margin: 15px auto 0 auto;
+        display: block;
+    }
+    
+    .sun__svg {
+        fill: rgb(238, 175, 15);
+        animation: colors 5s infinite alternate;
+    }
+    
+    @keyframes colors {
+        from {
+            fill: rgb(238, 175, 15);
+        }
+        to {
+            fill: rgb(219, 59, 10);
+        }
+    }
+    
+    .about__footer {
+        margin-top: 290px;
+    }
+    /* Contact Page */
+    
+    .contact__header {
+        font-family: var(--main-font);
+        font-size: var(--big-text);
+        text-shadow: 3px 3px var(--secondary-color);
+        margin: 0 auto 30px auto;
+        text-align: center;
+        position: relative;
+        bottom: 20px;
+    }
+    
+    .contact__form {
+        max-width: 60%;
+        margin: 0 auto;
+        position: relative;
+        left: 10%;
+    }
+    
+    .form__label {
+        font-family: var(--main-font);
+        font-size: var(--text-size);
+        text-shadow: 1px 1px var(--secondary-color);
+        display: inline-block;
+        width: 30%;
+        margin: 20px auto;
+    }
+    
+    .form__label-message {
+        vertical-align: top;
+    }
+    
+    .form__input {
+        font-family: var(--main-font);
+        font-size: 1.2em;
+    }
+    
+    .button {
+        border: none;
+        display: inline-block;
+        font-family: var(--main-font);
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0);
+        position: relative;
+        left: 18%;
+        top: 10%;
+    }
+    
+    .button:hover {
+        text-shadow: 2px 2px var(--secondary-color);
+    }
+    
+    .contact__footer {
+        margin-top: 57px;
+    }
+    /* Media */
+    
+    @media all and (max-width: 750px) {
+        .work__grid {
+            grid-gap: 10px;
+        }
+        .work__grid-item:last-child {
+            grid-column: auto / auto;
+            grid-row: auto / auto;
+        }
+        h1 {
+            font-size: 22px;
+        }
+        .profile {
+            display: block;
+            margin: 0 auto;
+            margin-left: 10%;
+            margin-top: 10%;
+        }
+        .header__marigold {
+            display: none;
+        }
+        .nav__list {
+            display: flex;
+            width: 80%;
+            flex-direction: row;
+            justify-content: center;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+        .nav__list-item {
+            height: 30px;
+            margin-left: 5vw;
+            display: inline-block;
+            padding: 6px;
+            text-align: center;
+            font-family: var(--main-font);
+            font-size: 1.6em;
+        }
+        .profile__headshot {
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+            box-shadow: 0 0 15px var(--primary-color)r;
+        }
+        .button {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+    @media all and (max-width: 500px) {
+        .work__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    @media all and (min-width: 500px) and (max-width: 750px) {
+        .work__grid {
+            grid-template-columns: 1fr;
+        }
+    }

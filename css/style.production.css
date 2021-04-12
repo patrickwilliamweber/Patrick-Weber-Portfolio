@@ -1,0 +1,450 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.page-wrap::before {
+    background-color: lightgoldenrodyellow;
+    opacity: .3;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -2;
+}
+
+.bokeh-background::before {
+    content: "";
+    background-image: url("https://motionarray.imgix.net/preview-101334-W3sWvekUw8-high_0013.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.header__marigold {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 8px #ff2400;
+    box-shadow: 0 0 8px #ff2400;
+}
+
+.nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.nav__list-item {
+    height: 50px;
+    margin-left: 5vw;
+    display: inline-block;
+    padding: 12px;
+    text-align: center;
+    font-family: "Akaya Telivigala";
+    font-size: 1.6em;
+}
+
+.nav__list-item:hover {
+    text-shadow: 0 0 8px #ff2400;
+}
+
+.profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 5em auto 0 auto;
+}
+
+.profile__headshot {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-left: auto;
+    margin-top: 30px;
+    -webkit-box-shadow: 0 0 15px #ff2400;
+    box-shadow: 0 0 15px #ff2400;
+}
+
+.profile__hello-text {
+    margin: 2em auto 0 3em;
+}
+
+.profile__hello {
+    font-family: "Akaya Telivigala";
+    font-size: 4.2em;
+    text-shadow: 3px 3px lightcoral;
+}
+
+.profile__text {
+    font-family: "Akaya Telivigala";
+    font-size: 1.5em;
+    text-shadow: 1px 1px lightcoral;
+}
+
+.profile__resume-button {
+    font-family: "Akaya Telivigala";
+    font-size: 1.5em;
+    text-shadow: 1px 1px lightcoral;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.footer__logos {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.footer__logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: .5;
+    -webkit-transition: opacity 700ms;
+    -o-transition: opacity 700ms;
+    transition: opacity 700ms;
+    margin: 0 6px;
+}
+
+.footer__logo:hover {
+    opacity: 1;
+    -webkit-box-shadow: 0 0 10px #ff2400;
+    box-shadow: 0 0 10px #ff2400;
+}
+
+.footer__logo-facebook {
+    height: 95px;
+    width: 95px;
+}
+
+.footer__logo-youtube {
+    width: 100px;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.footer__text {
+    text-align: center;
+    font-family: "Akaya Telivigala";
+}
+
+.footer__email:hover {
+    text-shadow: 0 0 8px #ff2400;
+}
+
+
+/* Work Page */
+
+.work__heading {
+    font-family: "Akaya Telivigala";
+    font-size: 4.2em;
+    text-shadow: 3px 3px lightcoral;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.work__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.work__grid-child {
+    height: 200px;
+    width: 250px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(40, 60, 80)), to(rgb(194, 210, 224)));
+    background-image: -o-linear-gradient(top, rgb(40, 60, 80), rgb(194, 210, 224));
+    background-image: linear-gradient(to bottom, rgb(40, 60, 80), rgb(194, 210, 224));
+    border: 3px solid black;
+    border-radius: 10%;
+    margin: 10% 10%;
+    -webkit-transition: background-image 2s;
+    -o-transition: background-image 2s;
+    transition: background-image 2s;
+    -webkit-transition: background-color 2s;
+    -o-transition: background-color 2s;
+    transition: background-color 2s;
+}
+
+.work__grid-child:hover {
+    background-color: rgb(60, 119, 170);
+    background-image: none;
+}
+
+.work__footer {
+    margin-top: -13px;
+}
+
+
+/*  About Page */
+
+.about__header {
+    font-family: "Akaya Telivigala";
+    font-size: 4.2em;
+    text-shadow: 3px 3px lightcoral;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.about__text {
+    font-family: "Akaya Telivigala";
+    font-size: 1.5em;
+    text-shadow: 1px 1px lightcoral;
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+/* SVG */
+
+.house__svg {
+    width: 300px;
+    height: 300px;
+    margin: 40px auto 0 auto;
+    display: block;
+}
+
+.sun__svg {
+    fill: rgb(238, 175, 15);
+    -webkit-animation: colors 5s infinite alternate;
+    animation: colors 5s infinite alternate;
+}
+
+@-webkit-keyframes colors {
+    from {
+        fill: rgb(238, 175, 15);
+    }
+    to {
+        fill: rgb(219, 59, 10);
+    }
+}
+
+@keyframes colors {
+    from {
+        fill: rgb(238, 175, 15);
+    }
+    to {
+        fill: rgb(219, 59, 10);
+    }
+}
+
+.about__footer {
+    margin-top: 290px;
+}
+
+
+/* Contact Page */
+
+.contact__header {
+    font-family: "Akaya Telivigala";
+    font-size: 4.2em;
+    text-shadow: 3px 3px lightcoral;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.contact__form {
+    max-width: 60%;
+    margin: 0 auto;
+    position: relative;
+    left: 10%;
+}
+
+.form__label {
+    font-family: "Akaya Telivigala";
+    font-size: 1.5em;
+    text-shadow: 1px 1px lightcoral;
+    display: inline-block;
+    width: 30%;
+    margin: 20px auto;
+}
+
+.form__label-message {
+    vertical-align: top;
+}
+
+.form__input {
+    font-family: "Akaya Telivigala";
+    font-size: 1.2em;
+}
+
+.button {
+    border: none;
+    display: inline-block;
+    font-family: "Akaya Telivigala";
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    left: 18%;
+    top: 10%;
+}
+
+.button:hover {
+    text-shadow: 2px 2px lightcoral;
+}
+
+.contact__footer {
+    margin-top: 57px;
+}
+
+
+/* Media */
+
+@media all and (max-width: 750px) {
+    .work__grid {
+        grid-gap: 10px;
+    }
+    .work__grid-item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+}
+
+h1 {
+    font-size: 22px;
+}
+
+.profile {
+    display: block;
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.header__marigold {
+    display: none;
+}
+
+.nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+.nav__list-item {
+    height: 30px;
+    margin-left: 5vw;
+    display: inline-block;
+    padding: 6px;
+    text-align: center;
+    font-family: "Akaya Telivigala";
+    font-size: 1.6em;
+}
+
+.profile__headshot {
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 15px #ff2400r;
+    box-shadow: 0 0 15px #ff2400r;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+}
+
+@media all and (max-width: 500px) {
+    .work__grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .work__grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
+;
