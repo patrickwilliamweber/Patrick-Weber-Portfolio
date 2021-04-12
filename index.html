@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>My Portfolio Contact Page</title>
+    <title>My Portfolio Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--<link rel="stylesheet" href="../CSS/style.production.css">-->
     <meta charset="UTF-8">
 </head>
 
@@ -24,27 +26,17 @@
 
                 </ul>
             </header>
-
-            <h1 class="contact__header">Get in touch...</h1>
-            <div class="contact__form">
-                <form id="form" action="tbd.com" method="post">
-                    <label class="form__label" for="email">Email:</label>
-                    <input class="form__input" id="email" type=email required>
-                    <br>
-                    <label class="form__label" for="phone">Phone Number: (optional)</label>
-                    <input class="form__input" id="phone" type="tel">
-                    <br>
-                    <label class="form__label form__label-message" id="message-word" for="message">Message:</label>
-                    <textarea class="form__input" id="message" cols="16" rows="10" required></textarea>
-                    <br>
-                    <input class="button form__label" type="submit" value="[Send Message]">
-                </form>
-            </div>
-
-
-
-
-            <footer class="footer contact__footer">
+            <!--COPY/PASTE STOP-->
+            <main class="profile">
+                <img class="profile__headshot" alt="my headshot" src="../Images/Head_Shot.jpg">
+                <div class="profile__hello-text">
+                    <h1 class="profile__hello">Hello...</h1>
+                    <p class="profile__text">I'm Patrick,<br>I'm a web developer from Connecticut.</p>
+                    <p class="form__label profile__resume-button"><a href="../Docs/Patrick_Weber_Resume.pdf" target="_blank" class="button profile__resume-button" download>Download my resume</a></p>
+                </div>
+            </main>
+            <!--COPY/PASTE START-->
+            <footer class="footer">
                 <div class="footer__container">
                     <h2 class="footer__text">Find me here!</h2>
                     <div class="footer__logos">
