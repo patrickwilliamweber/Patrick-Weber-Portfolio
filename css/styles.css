@@ -183,7 +183,7 @@
     }
     
     .work__grid-child {
-        height: 200px;
+        height: 175px;
         width: 250px;
         background-image: linear-gradient(to bottom, rgb(40, 60, 80), rgb(194, 210, 224));
         border: 3px solid black;
