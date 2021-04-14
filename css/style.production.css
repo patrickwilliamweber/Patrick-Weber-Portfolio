@@ -444,7 +444,7 @@
     }
 }
 
-@media all and (max-height: 750px) {
+@media all and (max-height: 600px) {
     .footer {
         display: none;
     }
