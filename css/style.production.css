@@ -421,8 +421,8 @@
         -o-object-fit: cover;
         object-fit: cover;
         margin: 0 auto;
-        -webkit-box-shadow: 0 0 15px #ff2400r;
-        box-shadow: 0 0 15px #ff2400r;
+        -webkit-box-shadow: 0 0 15px #ff2400;
+        box-shadow: 0 0 15px #ff2400;
     }
     .button {
         width: 100%;
@@ -442,4 +442,4 @@
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
-}
+};
