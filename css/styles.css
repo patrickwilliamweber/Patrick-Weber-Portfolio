@@ -366,3 +366,9 @@
             grid-template-columns: 1fr;
         }
     }
+    
+    @media all and (max-height: 750px) {
+        .footer {
+            display: none;
+        }
+    }

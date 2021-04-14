@@ -225,7 +225,7 @@
 }
 
 .work__grid-child {
-    height: 200px;
+    height: 175px;
     width: 250px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(40, 60, 80)), to(rgb(194, 210, 224)));
     background-image: -o-linear-gradient(top, rgb(40, 60, 80), rgb(194, 210, 224));
@@ -428,7 +428,7 @@
         width: 100%;
         text-align: center;
     }
-};
+}
 
 @media all and (max-width: 500px) {
     .work__grid {
@@ -442,4 +442,12 @@
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
-};
+}
+
+@media all and (max-height: 750px) {
+    .footer {
+        display: none;
+    }
+}
+
+;
